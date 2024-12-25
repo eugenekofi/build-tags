@@ -20,6 +20,6 @@ jobs:
             aws-region: ${{ secrets.AWS_REGION }}
   
       - name: Deploy to S3 bucket 
-        run: aws s3 sync . s3://d010642-tf-state-bucket --delete --exclude "library/*" --exclude ".git" --exclude ".github"
+        run: aws s3 sync . s3://project203 --delete --exclude "library/*" --exclude ".git" --exclude ".github"
 
 
